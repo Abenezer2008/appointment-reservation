@@ -1,0 +1,22 @@
+server:
+  port: 80
+  servlet:
+    context-path: /rantevou/v1
+spring:
+  application:
+    name: ea-boot-reflection-v1
+  datasource:
+    url: jdbc:mysql://localhost/ea-project
+    username: projectuser
+    password: pa55w0rd
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
