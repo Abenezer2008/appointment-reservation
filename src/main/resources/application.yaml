@@ -4,7 +4,7 @@ server:
     context-path: /rantevou/v1
 spring:
   application:
-    name: ea-boot-reflection-v1
+    name: rantevou-appointment-reservation
   datasource:
     url: jdbc:mysql://localhost/ea-project
     username: projectuser
@@ -20,3 +20,6 @@ spring:
     properties:
       hibernate:
       dialect: org.hibernate.dialect.MySQL8Dialect
+jwt:
+  secret: rantevou
+  expirationDateInMs: 2000000

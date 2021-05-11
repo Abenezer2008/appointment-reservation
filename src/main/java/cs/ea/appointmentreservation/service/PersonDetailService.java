@@ -45,6 +45,7 @@ public class PersonDetailService implements UserDetailsService {
 
     public Person getCurrentPerson(){
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//        Object principal = SecurityContextHolder.getContext().getAuthentication().setAuthenticated(false);
         String username = ((UserDetails)principal).getUsername();
         return personRepository.findByUsername(username).get();
     }

@@ -15,7 +15,7 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("/public")
-public class ProfileController {
+public class PublicController {
     @Autowired
     private IPersonService personService;
 
